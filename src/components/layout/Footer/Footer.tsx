@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import style from './Footer.module.css';
+import style from '@/components/layout/Footer/footer.module.css';
 import logo from '@/assets/images/logo.svg';
 import instagram from '@/assets/icons/socialMidia/InstagramOld.svg'
 import linkedin from '@/assets/icons/socialMidia/LinkedIn.svg'
