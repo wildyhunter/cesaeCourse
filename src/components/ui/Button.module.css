@@ -1,4 +1,4 @@
-button {
+.button {
     padding: 10px 30px;
     min-width: 130px;
     border-radius: 50px;
@@ -10,6 +10,6 @@ button {
     z-index: 3;
 }
 
-button:hover {
+.button:hover {
     transform: scale(1.1);
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@600&family=Source+Code+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --font-h1: 'Oswald', sans-serif;
@@ -8,12 +8,12 @@
     --font-link: 'Source Code Pro', monospace;
     --font-button: 'Source Code Pro', monospace;
     --allblack: #000000;
-    --allwhite: #FFFFFF;
-    --allwhiteCards:  rgba(255, 255, 255, 0.15);
-    --bluesky: #009FE3;
-    --footer: #0B0B0B;
-    --marineblue: #1E2F56;
-    --pinkcesae: #E6007E;
+    --allwhite: #ffffff;
+    --allwhiteCards: rgba(255, 255, 255, 0.15);
+    --bluesky: #009fe3;
+    --footer: #0b0b0b;
+    --marineblue: #1e2f56;
+    --pinkcesae: #e6007e;
     --scalegray: #141414;
 }
 
@@ -63,4 +63,3 @@ button {
     font-size: 16px;
     font-weight: 600;
 }
-

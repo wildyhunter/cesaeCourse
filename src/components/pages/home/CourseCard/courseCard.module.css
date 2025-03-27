@@ -1,0 +1,45 @@
+.coursesContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    height: 400px;
+    margin: 120px 0 88px;
+}
+.card {
+    max-width: 270px;
+    width: 100%;
+    height: 416px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: var(--allwhiteCards);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.h4 {    
+    text-align: justify;
+    font-family: var(--font-h3);
+    font-size: 16px;
+    color: var(--allwhite);
+    margin: 8px 0;
+}
+.p {
+    font-family: var(--font-p);
+    font-size: 14px;
+    color: var(--allwhite);
+    margin-top: 16px;   
+}
+
+.buttonCourse {
+    display: flex;
+    justify-content: flex-end;
+}
