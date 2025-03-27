@@ -1,0 +1,15 @@
+button {
+    padding: 10px 30px;
+    min-width: 130px;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--bluesky), var(--pinkcesae));
+    color: var(--allwhite);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
