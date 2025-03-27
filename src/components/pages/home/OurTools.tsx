@@ -17,13 +17,13 @@ const images = [
 ];
 
 const OurTools = () => {
-   const path = 'src/assets/images/home/ourTools/'
+    const path = '../../assets/images/home/ourTools/';
     return (
         <div className={style.toolsContainer}>
             <motion.div
                 className={style.motionContainer}
                 initial={{ x: '0' }}
-                animate={{ x: '-50%'}}
+                animate={{ x: '-50%' }}
                 transition={{
                     repeat: Infinity,
                     duration: 30,
