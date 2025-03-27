@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #ff5555;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.message {
+    font-size: 18px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #ff2222;
+}

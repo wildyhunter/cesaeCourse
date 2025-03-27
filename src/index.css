@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@600&family=Source+Code+Pro:wght@400;500;600&display=swap');
+
+:root {
+  --font-h1: 'Oswald', sans-serif;
+  --font-h2: 'Oswald', sans-serif;
+  --font-h3: 'Poppins', sans-serif;
+  --font-text: 'Source Code Pro', monospace;
+  --font-link: 'Source Code Pro', monospace;
+  --font-button: 'Source Code Pro', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--font-h2);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: var(--font-h3);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-family: var(--font-link);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-button);
+  font-size: 16px;
+  font-weight: 600;
+}
