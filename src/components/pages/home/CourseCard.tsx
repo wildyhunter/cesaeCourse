@@ -3,7 +3,7 @@ import { Course, course } from '../../../services/CardCourseService';
 import { useEffect } from 'react';
 
 import Button from '../../ui/Button';
-import style from './CourseCard.module.css';
+import style from './courseCard.module.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

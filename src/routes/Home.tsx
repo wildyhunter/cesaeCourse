@@ -3,7 +3,7 @@ import Title from '../components/pages/home/Title';
 import CourseCard from '../components/pages/home/CourseCard';
 import OurTools from '../components/pages/home/OurTools';
 
-import style from './Home.module.css';
+import style from './home.module.css';
 
 const Home = () => {
     return (

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import style from './HeroImage.module.css';
+import style from './heroImage.module.css';
 const HeroImage = () => {
     return (
         <>

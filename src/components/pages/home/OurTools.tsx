@@ -1,4 +1,4 @@
-import style from './OurTools.module.css';
+import style from './ourTools.module.css';
 import { motion } from 'framer-motion';
 
 const images = [
