@@ -17,7 +17,7 @@ const images = [
 ];
 
 const OurTools = () => {
-   const path = '/src/assets/images/home/ourTools'
+    const path = '@/assets/images/home/ourTools';
     return (
         <div className={style.toolsContainer}>
             <motion.div
