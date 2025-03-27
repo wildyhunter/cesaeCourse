@@ -1,23 +1,10 @@
 import style from './ourTools.module.css';
 import { motion } from 'framer-motion';
+import { languages, Language} from '../../../services/LanguagesServices';
 
-const images = [
-    '/react.png',
-    '/vue.png',
-    '/angular.png',
-    '/javaScript.png',
-    '/html.png',
-    '/css.png',
-    '/csharp.png',
-    '/adobe.png',
-    '/python.png',
-    '/linux.png',
-    '/type.png',
-    '/android.png',
-];
 
 const OurTools = () => {
-   const path = '../../../assets/images/home/ourTools'
+const imageLanguages: Language[] = languages
     return (
         <div className={style.toolsContainer}>
             <motion.div
@@ -30,11 +17,11 @@ const OurTools = () => {
                     ease: 'linear',
                 }}
             >
-                {[...images, ...images].map((src, i) => (
+                {imageLanguages.map((src, i) => (
                     <div key={i} className={style.imageCard}>
                         <img
-                            src={`${path}${src}`}
-                            alt={`Image ${i}`}
+                            src={src.image}
+                            alt={src.name}
                             className={style.image}
                         />
                     </div>
