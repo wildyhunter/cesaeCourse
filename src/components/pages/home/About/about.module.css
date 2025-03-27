@@ -8,13 +8,14 @@
 }
 .imgContainer {
     max-width: 50%;
+    width: 100%;
 }
 .textContent {
     display: flex;
     max-width: 50%;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 10px 30px;
     color: white;
 }
 .img {
