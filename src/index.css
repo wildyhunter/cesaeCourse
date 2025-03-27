@@ -1,54 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@600&family=Source+Code+Pro:wght@400;500;600&display=swap');
 
 :root {
-  --font-h1: 'Oswald', sans-serif;
-  --font-h2: 'Oswald', sans-serif;
-  --font-h3: 'Poppins', sans-serif;
-  --font-text: 'Source Code Pro', monospace;
-  --font-link: 'Source Code Pro', monospace;
-  --font-button: 'Source Code Pro', monospace;
+    --font-h1: 'Oswald', sans-serif;
+    --font-h2: 'Oswald', sans-serif;
+    --font-h3: 'Poppins', sans-serif;
+    --font-text: 'Source Code Pro', monospace;
+    --font-link: 'Source Code Pro', monospace;
+    --font-button: 'Source Code Pro', monospace;
+    --allblack: #000000;
+    --allwhite: #FFFFFF;
+    --allwhiteCards:  rgba(255, 255, 255, 0.15);
+    --bluesky: #009FE3;
+    --footer: #0B0B0B;
+    --marineblue: #1E2F56;
+    --pinkcesae: #E6007E;
+    --scalegray: #141414;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: var(--scalegray);
 }
 
 h1 {
-  font-family: var(--font-h1);
-  font-size: 72px;
-  font-weight: 700;
+    font-family: var(--font-h1);
+    font-size: 72px;
+    font-weight: 700;
 }
 
 h2 {
-  font-family: var(--font-h2);
-  font-size: 36px;
-  font-weight: 400;
+    font-family: var(--font-h2);
+    font-size: 36px;
+    font-weight: 400;
 }
 
 h3 {
-  font-family: var(--font-h3);
-  font-size: 28px;
-  font-weight: 600;
+    font-family: var(--font-h3);
+    font-size: 28px;
+    font-weight: 600;
 }
 
 p {
-  font-family: var(--font-text);
-  font-size: 18px;
-  font-weight: 400;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 a {
-  font-family: var(--font-link);
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  color: inherit;
+    font-family: var(--font-link);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
-  font-family: var(--font-button);
-  font-size: 16px;
-  font-weight: 600;
+    font-family: var(--font-button);
+    font-size: 16px;
+    font-weight: 600;
 }
+

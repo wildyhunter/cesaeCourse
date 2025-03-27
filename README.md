@@ -1,32 +1,54 @@
-# Cesae Course
+# React + TypeScript + Vite
 
-Cesae Course é uma plataforma de cursos online desenvolvida para proporcionar uma experiência de aprendizado envolvente e interativa. O projeto é construído com **React** e **TypeScript**, utilizando a biblioteca **Framer Motion** para animações e transições suaves.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tecnologias Utilizadas
+Currently, two official plugins are available:
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Superset de JavaScript que adiciona tipagem estática.
-- **Framer Motion**: Biblioteca de animação para React, proporcionando animações fluidas e interativas.
-- **CSS Modules**: Técnica para escopo local de CSS, garantindo estilos isolados por componente.
-- **React Router**: Para navegação entre páginas de maneira dinâmica.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Funcionalidades
+## Expanding the ESLint configuration
 
-- **Cadastro e Login**: Sistema de autenticação para usuários acessarem os cursos.
-- **Página de Cursos**: Exibe uma lista de cursos disponíveis, com informações como título, descrição e preço.
-- **Animações de Navegação**: Transições suaves entre páginas e elementos interativos usando Framer Motion.
-- **Área do Aluno**: Acesso ao progresso dos cursos, histórico de aulas assistidas e materiais.
-- **Responsive Design**: O site é totalmente responsivo, adaptando-se a diferentes tamanhos de tela.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Instalação
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-### Pré-requisitos
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-Certifique-se de que você tenha o **Node.js** e o **npm** (ou **yarn**) instalados. Caso não tenha, baixe e instale [Node.js](https://nodejs.org/).
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-### Passos para Rodar o Projeto Localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/cesae-course.git
-
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
